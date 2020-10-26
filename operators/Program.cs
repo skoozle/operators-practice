@@ -24,7 +24,7 @@ namespace operators
 
             var areaOfCircle = pi * (radius * radius);
 
-            Console.WriteLine($"the are aof a circle with a {radius} is {areaOfCircle}");
+            Console.WriteLine($"the area of a circle with a {radius} is {areaOfCircle}");
 
             var i = 3;
 
@@ -38,7 +38,7 @@ namespace operators
 
             var ac = 40;
 
-            var ad = ab >= ac ;
+            var ad = ab >= ac && ac > ab;
 
             Console.WriteLine(ad);
         }
