@@ -33,6 +33,14 @@ namespace operators
             var k = ++i * j++;
 
             Console.WriteLine(k);
+
+            var ab = 30;
+
+            var ac = 40;
+
+            var ad = ab >= ac ;
+
+            Console.WriteLine(ad);
         }
     }
 }
