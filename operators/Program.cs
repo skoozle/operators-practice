@@ -26,7 +26,13 @@ namespace operators
 
             Console.WriteLine($"the are aof a circle with a {radius} is {areaOfCircle}");
 
+            var i = 3;
 
+            var j = 4;
+
+            var k = ++i * j++;
+
+            Console.WriteLine(k);
         }
     }
 }
