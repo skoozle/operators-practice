@@ -4,6 +4,11 @@ namespace operators
 {
     class Program
     {
+        public static double AreaofCircle( double radius)
+        {
+            double pi = 3.14;
+            return pi * (radius * radius);
+        }
         static void Main(string[] args)
         {
             int a = 17;
@@ -19,12 +24,12 @@ namespace operators
             int subtraction = a - b;
             Console.WriteLine(subtraction);
 
-            var radius = 20;
-            var pi = Math.PI;
+            
+         
 
-            var areaOfCircle = pi * (radius * radius);
+            
 
-            Console.WriteLine($"the area of a circle with a {radius} is {areaOfCircle}");
+            
 
             var i = 3;
 
@@ -41,6 +46,44 @@ namespace operators
             var ad = ab >= ac && ac > ab;
 
             Console.WriteLine(ad);
-        }
+
+            Console.WriteLine("What is the radius of the circle?");
+            double radius = Convert.ToDouble(Console.ReadLine());
+            var area = AreaofCircle(radius);
+           
+
+            Console.WriteLine($"the area of a circle with a {radius} is {area}");
+
+
+
+            //--------------------------------------------------------------------
+
+
+            bool shouldContinue = false;
+
+            Console.WriteLine("Would you like to continue?");
+            var answer = Console.ReadLine();
+
+            if (answer.ToLower() == "yes"|| answer.ToLower() =="ok")
+            {
+                Console.WriteLine("Continue with program");
+            }
+
+            if (shouldContinue)
+            {
+                shouldContinue = true;
+            }
+
+            else
+            {
+                Console.WriteLine("End program");
+            }
+
+
+
+
+
+        }   
+            
     }
 }
